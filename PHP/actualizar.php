@@ -3,8 +3,12 @@
 
     $id = Parametro('id');
 
-    $SQL = "select * from noticias where id = $id";
-    $RRS = $Conexion->query($SQL);
+    // Consulta segura usando prepared statement
+    $stmt = $Conexion->prepare("SELECT * FROM noticias WHERE id = ?");
+    $stmt->bind_param("i", $id); // "i" indica que es un número entero
+    $stmt->execute();
+
+    $RRS = $stmt->get_result();
     $RS  = $RRS->fetch_array();
 
     $Texto = $RS['titulo'];

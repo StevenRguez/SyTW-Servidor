@@ -5,8 +5,13 @@
     $Area = Parametro('area');
 
     if ($Texto != '' && $Area != '') {
-        $SQL = "insert into noticias (titulo, idarea) values ('$Texto', $Area) ";
-        $Conexion->query($SQL);
+        if ($stmt = $Conexion->prepare("INSERT INTO noticias (titulo, idarea) VALUES (?, ?)")) {
+            $stmt->bind_param('ss', $Texto, $Area);
+            $stmt->execute();
+            $stmt->close();
+        } else {
+            error_log("Error al preparar la consulta: " . $Conexion->error);
+        }
     }
 
     header('Location: listado.php');

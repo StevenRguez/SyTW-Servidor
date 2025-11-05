@@ -48,10 +48,10 @@
 
             </select>
             <input type="submit" name="boton" value="Buscar">
+            </form>
             <form action="formulario.php" method="post">
                 <button type="submit">Añadir noticia</button>
             </form>
-        </form>
 
         <?php
             // =======================
@@ -137,6 +137,7 @@
 
             //print_r($JS); // Muestra el array completo de forma recursiva
             // echo json_encode($JS); // Muestra el array en formato JSON
+            $stmt->close();
         ?>
     </body>
 </html>
