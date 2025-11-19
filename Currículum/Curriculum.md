@@ -1,5 +1,7 @@
 # **Curriculum Vitae — Europass Format**
 
+<img src="https://media.licdn.com/dms/image/v2/D5603AQHMAD8S7hsALg/profile-displayphoto-scale_400_400/B56ZpQhHiPIYAk-/0/1762287451511?e=1765411200&v=beta&t=HY5cBbW_ibbU_bc2htRuir8rfWz5a-Jy6WZHkehuBXw" alt="profile pic" align="right" width="100">
+
 ## **Personal Information**
 **Name:** Steven Rodríguez Morales 
 **Address:** Barranco Grande, Calle Tadorna, 38107, Santa Cruz de Tenerife
@@ -91,3 +93,5 @@ Key subjects: Algorithms, Databases, Networking, Operating Systems.
 - Enhanced the event’s visual identity and produced promotional materials.  
 - Supervised a team responsible for content creation, visibility, and outreach across digital platforms.
 
+## **Public repo**
+[link](https://github.com/StevenRguez/SyTW-Servidor.git)
