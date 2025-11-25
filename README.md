@@ -7,3 +7,7 @@ Se han creado dos bases de datos: una para almacenar noticias y otra para gestio
 
 ### Curriculum
 Esta práctica trató de desarrollar un currículum vitae en formato *markdown*, y cuyo contenido fuese redactado en lengua inglesa que siguiera el formato sugerido por la herramienta *Europass*, con el fin de resultar en un documento estandarizado e internacionalmente aceptado. Se adjunta asimismo una carta de presentación que permita validar al entrevistado de forma rápida, previo a la lectura del currículum.
+
+### Peticiones_Nodejs
+En esta práctica se solicitó realizar peticiones paralelas a un servidor haciendo uso de **Node.js**. 
+En este sentido, se propuso plantear cuatro posibles formas de pedir datos a un servidor dado ([https://fmartinz.webs.ull.es/data/mostrar.php]([url](https://fmartinz.webs.ull.es/data/mostrar.php))), como son a través de *peticiones secuenciales* (donde cada petición se realiza una detrás de la otra, y la actual no puede ser resuelta hasta que no se complete la anterior), *peticiones paralelas* (donde se realizan las cuatro peticiones de manera simultánea), *peticiones paralelas que hacen uso de promesas* (permitiendo desarrollar código asíncrono, e identificando cada petición como algo que aún no ha ocurrido, pero que ocurrirá más tarde), o *peticiones paralelas utlizando ***async*** y ***await*** * (permitiendo una funcionalidad similar a la de las promesas, pero implementado a través de un código más limpio y sencillo). 
